@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .grid{
+      display: grid;
+      grid-template-columns: 200px 700px;
+      grid-row: 20px;
+    }
+    .grid1{
+      display: grid;
+      grid-template-columns: 200px 1fr 200px;
+      column-gap: 20px;
+    }   
+    .grid2{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 20px;
+    }     
+  </style>
+  <div class="grid">
+    <div style="background-color: aqua;">200px</div>
+    <div style="background-color: blueviolet;">700px</div>
+  </div>
+  <hr>
+  <div class="grid1">
+    <div style="background-color: aqua;">200px</div>
+    <div style="background-color: blueviolet;">1fr</div>
+    <div style="background-color: rgb(206, 14, 87);">200px</div>
+  </div>
+  <hr>
+  <div class="grid2">
+    <div style="background-color: aqua;">200px</div>
+    <div style="background-color: blueviolet;">1fr</div>
+    <div style="background-color: lightpink;">200px</div>
+    <div style="background-color: aqua;">200px</div>
+    <div style="background-color: blueviolet;">1fr</div>
+    <div style="background-color: rgb(206, 14, 87);">200px</div>
+    <div style="background-color: blueviolet;">1fr</div>
+    <div style="background-color: rgb(206, 14, 87);">200px</div>
+  </div>
+</body>
+</html>
